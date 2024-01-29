@@ -1,0 +1,145 @@
+a{
+    text-decoration: none;
+    color:white;
+ 
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+}
+.navbar-links{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+}
+   
+.navbar-links-anchor{
+    display:flex;
+    flex-direction: row;
+}
+.navbar-links-anchor p{
+    margin-left:1.5rem;
+    text-transform: capitalize;
+   
+}
+p{
+    color:white;
+}
+.logo{
+    margin-right:2rem;
+}
+img{
+    height:16px;
+    width:62px;
+}
+.signIn {
+   display: flex;
+   align-items: center;
+}
+.signIn p{
+margin-right: 1rem;
+align-items: center;
+}
+.buttons{
+padding:0.5rem 1rem;
+background-color: #ff4820;
+border-radius: 6px;
+cursor: pointer;
+color:white;
+border:#ff4820;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.handburger{
+    padding: 1rem;
+    cursor:pointer;
+    display: none;
+}
+.signInbutton{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.mobile_navbar{
+    display: none;
+    background: radial-gradient(circle at 3% 25%, rgba(0, 28, 53, 1) 27%, rgba(4, 12, 24, 1) 100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    top:40px;
+    min-width: 160px;
+    border-radius: 10px;
+    right:120px;
+    box-shadow: 0 0 0 0.5px;
+} 
+.mobile_navbar-links{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.mobile_navbar-links p{
+    padding:0.5rem;
+    text-transform: capitalize;
+}
+.scale-up-center{
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390,0.575,0.565,1.0) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390,0.575,0.565,1.0) both;    
+}
+@keyframes scale-up-center {
+    0%{
+        -webkit-transform: scale(0.5);
+        transform:scale(0.5);
+    }
+    100%{
+        -webkit-transform: scale(1);
+        transform:scale(1);
+    }
+    
+}
+@-webkit-keyframes scale-up-center {
+    0%{
+        -webkit-transform: scale(0.5);
+        transform:scale(0.5);
+    }
+    100%{
+        -webkit-transform: scale(1);
+        transform:scale(1);
+    }
+    
+}
+@media screen and (max-width:1050px){
+    .navbar-links-anchor{
+        display: none;
+    }
+    .handburger{
+        display: flex;
+    }
+    .mobile_navbar{
+        display: flex;
+    }
+    .mobile_navbar-links-signin{
+        display: none;
+    }
+}
+@media screen and (max-width:700px){
+    .navbar-links-anchor{
+        display: none;
+    }
+    .handburger{
+        display: flex;
+    }
+    .mobile_navbar{
+        display: flex;
+    }
+    .mobile_navbar-links-signin{
+        display: block;
+    }
+    .signInbutton{
+        display:none;
+    }
+}

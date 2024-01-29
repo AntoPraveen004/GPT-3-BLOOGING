@@ -1,0 +1,61 @@
+.cta_container{
+border: solid white 2px;
+margin:4rem;
+border-radius: 10px;
+align-items: center;
+display: flex;
+border-radius: 10.724px;
+border: 1px solid #000;
+background: linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+flex-wrap: wrap;
+}
+
+.description{
+    padding: 2rem;
+    gap: 10px;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Button{
+    flex:0.5;
+   align-items: center;
+   display: flex;
+}
+
+.Button button{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: solid 2px rgb(0, 0, 0);
+    width: 102px;
+    height: 32px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.early p{
+    color: black;
+    font-size: 12px;
+    font-family: "manrope";
+    font-weight: 900;
+}
+
+.content p{
+    color: black;
+    font-size: 20px;
+    font-family: "manrope";
+    font-weight: 900;
+}
+
+@media screen  and (max-width:500px)
+{
+    .cta_container{
+        flex-direction: column;
+    }
+    .Button{
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,10 @@
+.blog_container h1{
+-webkit-background-clip: text;
+background-clip:text;
+background-image: linear-gradient(89.97deg, #ab5efc 1.84%, #F49867 102.67%);
+color: transparent;
+}
+
+.blog_container{
+    margin: 4rem;
+}

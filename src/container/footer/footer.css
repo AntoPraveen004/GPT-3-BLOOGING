@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.footer_container{
+    background: #031B34;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.step_future{
+   padding: 2rem;
+-webkit-background-clip: text;
+background-clip:text;
+background-image: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+color: transparent;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 30px;
+}
+
+.step_future h1{
+    width: 450px;
+    flex-wrap: wrap;
+}
+.step_future-button{
+    display: flex;
+}
+
+.step_future-button button{
+    padding: 1rem;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.finalcontent
+{
+    padding: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+.gpt_imagediv{
+    height: 100%;
+    flex: 0.5;
+    gap: 15px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gpt_imagediv img{
+    width: 108px;
+height: 30px;
+}
+.gpt_imagediv p{
+    width: 150px;
+    color: #FFF;
+    font-family: Gilroy-Medium;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.listtags{
+    flex:1.5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+
+.links ul li{
+    color: white;
+    max-width: 150px;
+    height: 40px;
+    width: 150px;
+    color: #FFF;
+    font-family: Gilroy-Medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+.links ul li h2{
+    color: #FFF;
+    font-family: "manrope";
+    font-style: normal;
+    text-decoration: 3px solid white underline;
+    font-weight: 400;
+    line-height: normal;
+}
+.copyright{
+    padding-bottom: 1rem;
+}
+.copyright p{
+    text-align: center;
+}
+
+@media screen and (max-width:900px) {
+    .finalcontent{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        padding: 4rem;
+    }
+    .listtags{
+     flex-direction: column;
+     gap: 50px;
+    }
+    .links ul li h2{
+        text-decoration: underline;
+        font-family: "manrope";
+        font-weight: 500;
+    }
+}

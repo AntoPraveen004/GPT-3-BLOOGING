@@ -1,0 +1,122 @@
+.header_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 5rem;
+}
+.header{
+  display: flex;
+  margin-left: 4rem;
+}
+.header-tag h1{
+  background-image: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  font-size: 40px;
+}
+.header-tag-para{
+    font-size: 20px;
+    line-height:27px;
+    padding: 0.5rem;
+    font-weight: none;
+}
+.serach{
+    display: flex;
+    flex-direction:row;
+    margin-top: 2rem;
+}
+.serach input{
+    flex:1;
+    display: flex;
+    padding: 12px; 
+    width:100%;
+    background-color:#042c54;
+    border:none;
+    border-radius: 5px 0 0 5px;
+    color: white;
+}
+.serach input:hover{
+    border: none;
+}
+.serach button{
+    border-radius: 0 5px 5px 0;
+}
+.people{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0 ;
+}
+.people p{
+    padding-left: 0.5rem;
+    font-size: 13px;
+}
+.people img{
+   width: 100px;
+   height: 30px;
+}
+.gpt_img img{
+    width:100%;
+    height: 85%;
+}
+#hovers:focus{
+    outline: none;
+}
+@media screen and (max-width:1050px){
+    .header{
+        display: flex;
+        margin-left: 3rem;
+      }
+      .header-tag h1{
+        font-weight: 500;
+        font-size: 30px;
+      }
+      .header-tag-para{
+        font-size: 15px;
+        line-height:27px;
+        padding: 0.5rem;
+        font-weight: none;
+    }
+
+}
+@media screen and (max-width:700px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .header-tag h1{
+        font-weight: 800;
+        font-size: 30px;
+      }
+      .header-tag-para{
+        font-size: 15px;
+        line-height:25px;
+        padding: 0.5rem;
+        font-weight: none;
+    }
+      .header_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .people p{
+        font-size: 10px;
+    }
+    .gpt_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5rem;
+    }
+    .serach button{
+        padding: 0.5em;
+    }
+}
+@media screen and (max-width:1040px){
+    .gpt_img{
+        width: 100%;
+    }
+}
